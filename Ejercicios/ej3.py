@@ -1,5 +1,4 @@
 # Databricks notebook source
-tupla = (1,'hola', True, None, 10.5)
-lista_de_tupla = list(tupla)
-diccionario = dict(zip(range(1,6), lista_de_tupla))
-print(diccionario)
+import numpy as np
+print('Matriz de 3x3 del 0 al 8: \n', np.reshape(np.arange(9), (3,3)))
+print('Matriz identidad: \n', np.identity(6))
